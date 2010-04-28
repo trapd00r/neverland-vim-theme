@@ -76,8 +76,8 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=245
 
    hi Statement       ctermfg=172               cterm=bold
-   hi StatusLine      ctermfg=236 ctermbg=214
-   hi StatusLineNC    ctermfg=236 ctermbg=233
+   hi StatusLine      ctermfg=234 ctermbg=136
+   hi StatusLineNC    ctermfg=234 ctermbg=100
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
