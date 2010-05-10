@@ -100,4 +100,8 @@ if &t_Co > 255
    hi CursorColumn                ctermbg=233
    hi LineNr          ctermfg=241 ctermbg=233
    hi NonText         ctermfg=233 ctermbg=233
+
+   hi TabLine         ctermfg=100 ctermbg=233
+   hi TabLineFill     ctermfg=233 ctermbg=233
+   hi TabLineSel      ctermfg=220 ctermbg=234
 end
