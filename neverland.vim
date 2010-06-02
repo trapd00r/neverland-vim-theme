@@ -66,7 +66,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=218
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=160 ctermbg=233
+   hi Search          ctermfg=234 ctermbg=222
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235
@@ -95,7 +95,7 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Normal          ctermfg=256 ctermbg=233
-   hi Comment         ctermfg=101
+   hi Comment         ctermfg=137
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=233
    hi LineNr          ctermfg=241 ctermbg=233
