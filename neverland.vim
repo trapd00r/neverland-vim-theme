@@ -23,7 +23,7 @@ if &t_Co > 255
    hi Number          ctermfg=33
    hi String          ctermfg=179
    hi Conditional     ctermfg=196               cterm=bold
-   hi Constant        ctermfg=135               cterm=bold
+   hi Constant        ctermfg=106               cterm=bold
    hi Cursor          ctermfg=150  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
@@ -85,7 +85,7 @@ if &t_Co > 255
    hi Todo            ctermfg=160 ctermbg=233   cterm=bold
 
    hi Typedef         ctermfg=81
-   hi Type            ctermfg=81                cterm=none
+   hi Type            ctermfg=166               cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
