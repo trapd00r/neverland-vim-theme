@@ -16,7 +16,6 @@ if version > 580
 endif
 let g:colors_name="neverland"
 
-" Support for 256-color terminal
 if &t_Co > 255
    hi Boolean         ctermfg=135
    hi Character       ctermfg=143
@@ -24,7 +23,7 @@ if &t_Co > 255
    hi String          ctermfg=179
    hi Conditional     ctermfg=196               cterm=bold
    hi Constant        ctermfg=106               cterm=bold
-   hi Cursor          ctermfg=150  ctermbg=253
+   hi Cursor          ctermfg=150 ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
@@ -32,7 +31,7 @@ if &t_Co > 255
    hi DiffAdd                     ctermbg=24
    hi DiffChange      ctermfg=181 ctermbg=239
    hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffText                    ctermbg=102   cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
@@ -51,7 +50,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=196  ctermbg=234 cterm=bold
+   hi MatchParen      ctermfg=196 ctermbg=234   cterm=bold
    hi ModeMsg         ctermfg=215
    hi MoreMsg         ctermfg=215
    hi Operator        ctermfg=148
@@ -81,17 +80,17 @@ if &t_Co > 255
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
-   hi Title           ctermfg=21
+   hi Title           ctermfg=71
    hi Todo            ctermfg=160 ctermbg=233   cterm=bold
 
    hi Typedef         ctermfg=81
    hi Type            ctermfg=166               cterm=none
-   hi Underlined      ctermfg=244               cterm=underline
+   hi Underlined      ctermfg=106               cterm=none
 
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=238
    hi Visual                      ctermbg=235
-   hi WarningMsg      ctermfg=21 ctermbg=238   cterm=bold
+   hi WarningMsg      ctermfg=21  ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Normal          ctermfg=256 ctermbg=233
