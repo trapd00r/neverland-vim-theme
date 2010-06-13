@@ -14,7 +14,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="neverland"
+let g:colors_name="neverland2"
 
 " Support for 256-color terminal
 if &t_Co > 255
