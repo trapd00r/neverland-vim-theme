@@ -98,7 +98,7 @@ if &t_Co > 255
    hi CursorLine                  ctermbg=233  cterm=none
    hi CursorColumn                ctermbg=0
    hi LineNr          ctermfg=241 ctermbg=0
-   hi NonText         ctermfg=0 ctermbg=233
+   hi NonText         ctermfg=0 ctermbg=0
 
    hi TabLine         ctermfg=100 ctermbg=0
    hi TabLineFill     ctermfg=0 ctermbg=233
