@@ -1,4 +1,4 @@
-" Vim color file - neverland.vim
+" Vim color file - neverland-laptop.vim
 " Eyes are sober, this is the plan
 " I'm sitting in a car heading Neverland
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
@@ -14,7 +14,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="neverland"
+let g:colors_name="neverland-laptop"
 
 if &t_Co > 255
    hi Boolean         ctermfg=135
@@ -56,9 +56,9 @@ if &t_Co > 255
    hi Operator        ctermfg=148
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=233
+   hi Pmenu           ctermfg=81  ctermbg=235
    hi PmenuSel                    ctermbg=235
-   hi PmenuSbar                   ctermbg=232
+   hi PmenuSbar                   ctermbg=235
    hi PmenuThumb      ctermfg=81
 
    hi PreCondit       ctermfg=118               cterm=bold
@@ -75,13 +75,13 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=245
 
    hi Statement       ctermfg=172               cterm=bold
-   hi StatusLine      ctermfg=234 ctermbg=136
-   hi StatusLineNC    ctermfg=234 ctermbg=100
+   hi StatusLine      ctermfg=233 ctermbg=136
+   hi StatusLineNC    ctermfg=232 ctermbg=100
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
    hi Title           ctermfg=71
-   hi Todo            ctermfg=160 ctermbg=233   cterm=bold
+   hi Todo            ctermfg=160 ctermbg=232   cterm=bold
 
    hi Typedef         ctermfg=81
    hi Type            ctermfg=166               cterm=none
@@ -93,14 +93,14 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=21  ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=255 ctermbg=233
+   hi Normal          ctermfg=225 ctermbg=232
    hi Comment         ctermfg=137
-   hi CursorLine                  ctermbg=234   cterm=none
-   hi CursorColumn                ctermbg=233
-   hi LineNr          ctermfg=241 ctermbg=233
-   hi NonText         ctermfg=233 ctermbg=233
+   hi CursorLine                  ctermbg=233   cterm=none
+   hi CursorColumn                ctermbg=232
+   hi LineNr          ctermfg=241 ctermbg=232
+   hi NonText         ctermfg=232 ctermbg=232
 
-   hi TabLine         ctermfg=100 ctermbg=233
-   hi TabLineFill     ctermfg=233 ctermbg=233
+   hi TabLine         ctermfg=100 ctermbg=232
+   hi TabLineFill     ctermfg=232 ctermbg=233
    hi TabLineSel      ctermfg=220 ctermbg=234
 end
