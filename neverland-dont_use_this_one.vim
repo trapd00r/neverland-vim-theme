@@ -23,7 +23,7 @@ if &t_Co > 255
    hi String          ctermfg=179
    hi Conditional     ctermfg=196               cterm=bold
    hi Constant        ctermfg=106               cterm=bold
-   hi Cursor          ctermfg=150 ctermbg=253   
+   hi Cursor          ctermfg=150 ctermbg=220   
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
@@ -71,7 +71,7 @@ if &t_Co > 255
    hi SignColumn      ctermfg=118 ctermbg=235
    hi SpecialChar     ctermfg=161               cterm=none
    hi SpecialComment  ctermfg=245               cterm=bold
-   hi Special         ctermfg=81  ctermbg=232
+   hi Special         ctermfg=81  
    hi SpecialKey      ctermfg=245
 
    hi Statement       ctermfg=172               cterm=bold
