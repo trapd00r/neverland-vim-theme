@@ -1,6 +1,11 @@
-" Vim color file - neverland-dont_use_this_one.vim
+" Vim color file - neverland-ansi_bg.vim
 " Eyes are sober, this is the plan
-" I'm sitting in a car heading Neverland
+"
+" This colorscheme uses ANSI colors for the background due to the extended
+" colors not providing a dark enough grey.
+" This means that it'll look awful if you happen to have i.e pink defined as
+" your 'grey/black' color.
+"
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
 hi clear
@@ -14,7 +19,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="neverland-dont_use_this_one"
+let g:colors_name="neverland-ansi_bg"
 
 if &t_Co > 255
    hi Boolean         ctermfg=135 ctermbg=000 cterm=bold

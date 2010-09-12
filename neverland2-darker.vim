@@ -1,4 +1,4 @@
-" Vim color file - neverland2-laptop.vim
+" Vim color file - neverland2-darker.vim
 " Eyes are sober, this is the plan
 " I'm sitting in a car heading Neverland
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
@@ -14,7 +14,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="neverland2-laptop"
+let g:colors_name="neverland2-darker"
 
 " Support for 256-color terminal
 if &t_Co > 255
