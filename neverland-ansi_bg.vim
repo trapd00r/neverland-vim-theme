@@ -25,7 +25,7 @@ if &t_Co > 255
    hi Boolean         ctermfg=135 ctermbg=000 cterm=bold
    hi Character       ctermfg=143 ctermbg=000 cterm=none
    hi Number          ctermfg=033 ctermbg=000 cterm=bold
-   hi String          ctermfg=179 ctermbg=000 cterm=none
+   hi String          ctermfg=143 ctermbg=000 cterm=none
    hi Conditional     ctermfg=196 ctermbg=000 cterm=bold
    hi Constant        ctermfg=106 ctermbg=000 cterm=bold
    hi Cursor          ctermfg=150 ctermbg=220 cterm=bold
@@ -45,20 +45,20 @@ if &t_Co > 255
    hi Float           ctermfg=135 ctermbg=000 cterm=bold
    hi FoldColumn      ctermfg=67  ctermbg=016 cterm=none
    hi Folded          ctermfg=67  ctermbg=016 cterm=none
-   hi Function        ctermfg=197 ctermbg=000 cterm=bold " sub laleh 
+   hi Function        ctermfg=33 ctermbg=000 cterm=bold " sub laleh 
    hi Identifier      ctermfg=148 ctermbg=000 cterm=none " $laleh
    hi Ignore          ctermfg=244 ctermbg=232 cterm=none
    hi IncSearch       ctermfg=193 ctermbg=016 cterm=none
 
    hi Keyword         ctermfg=111 ctermbg=000 cterm=none
-   hi Label           ctermfg=229 ctermbg=000 cterm=none
+   hi Label           ctermfg=226 ctermbg=000 cterm=bold
    hi Macro           ctermfg=193 ctermbg=000 cterm=none
    hi SpecialKey      ctermfg=081 ctermbg=000 cterm=none
 
    hi MatchParen      ctermfg=196 ctermbg=234 cterm=bold
    hi ModeMsg         ctermfg=215 ctermbg=000 cterm=none
    hi MoreMsg         ctermfg=215 ctermbg=000 cterm=none
-   hi Operator        ctermfg=148 ctermbg=000 cterm=bold " defined, eq
+   hi Operator        ctermfg=197 ctermbg=000 cterm=bold " defined, eq
 
    " complete menu
    hi Pmenu           ctermfg=081 ctermbg=000 cterm=none
@@ -76,7 +76,7 @@ if &t_Co > 255
    hi SignColumn      ctermfg=118 ctermbg=235 cterm=none
    hi SpecialChar     ctermfg=161 ctermbg=000 cterm=none
    hi SpecialComment  ctermfg=245 ctermbg=000 cterm=bold
-   hi Special         ctermfg=081 ctermbg=000 cterm=none
+   hi Special         ctermfg=172 ctermbg=000 cterm=bold  " \n, /laleh/
    hi SpecialKey      ctermfg=245 ctermbg=000 cterm=none
 
    hi Statement       ctermfg=202 ctermbg=000 cterm=none
