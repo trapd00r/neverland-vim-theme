@@ -4,8 +4,7 @@ All Vim themes suck.
 
 256 colors, CLI only.
 
-![screenshot](http://github.com/trapd00r/neverland-vim-theme/raw/master/screenshot.png)
-
+![screenshot](http://perl.japh.se/devel/neverland-vim-theme/neverland.png)
 
 Installation
 ============
