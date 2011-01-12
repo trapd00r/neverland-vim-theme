@@ -3,21 +3,26 @@
 " I'm sitting in a car heading Neverland
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
-hi clear
 
 set background=dark
+hi clear
+
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
-    hi clear
     if exists("syntax_on")
         syntax reset
     endif
 endif
-let g:colors_name="neverland2-darker"
+let g:colors_name="neverland2-dark"
 
 " Support for 256-color terminal
 if &t_Co > 255
+   hi Normal          ctermfg=256 ctermbg=232
+
+   set background=dark
+
+
    hi Boolean         ctermfg=135
    hi Character       ctermfg=143
    hi Number          ctermfg=33
@@ -94,7 +99,6 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=21 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=256 ctermbg=232
    hi Comment         ctermfg=101
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=234

@@ -8,13 +8,12 @@
 "
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
+set background=dark
 hi clear
 
-set background=dark
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
-    hi clear
     if exists("syntax_on")
         syntax reset
     endif
@@ -22,6 +21,9 @@ endif
 let g:colors_name="neverland-ansi_bg"
 
 if &t_Co > 255
+   hi Normal          ctermfg=225 ctermbg=000 cterm=none
+   set backround=dark
+
    hi Boolean         ctermfg=135 ctermbg=000 cterm=bold
    hi Character       ctermfg=143 ctermbg=000 cterm=none
    hi Number          ctermfg=033 ctermbg=000 cterm=bold
@@ -98,7 +100,6 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=21  ctermbg=238 cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=016 cterm=none
 
-   hi Normal          ctermfg=225 ctermbg=000 cterm=none
    hi Comment         ctermfg=137 ctermbg=000 cterm=none
    hi CursorLine                  ctermbg=235 cterm=none
    hi CursorColumn    ctermfg=000 ctermbg=000 cterm=none
