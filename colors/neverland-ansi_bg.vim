@@ -48,7 +48,7 @@ if &t_Co > 255
    hi Function        ctermfg=33 ctermbg=000 cterm=bold " sub laleh 
    hi Identifier      ctermfg=148 ctermbg=000 cterm=none " $laleh
    hi Ignore          ctermfg=244 ctermbg=232 cterm=none
-   hi IncSearch       ctermfg=193 ctermbg=016 cterm=none
+   hi IncSearch       ctermfg=193 ctermbg=196 cterm=bold
 
    hi Keyword         ctermfg=111 ctermbg=000 cterm=none
    hi Label           ctermfg=226 ctermbg=000 cterm=bold
@@ -70,7 +70,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=218 ctermbg=000 cterm=none
    hi Question        ctermfg=081 ctermbg=000 cterm=none
    hi Repeat          ctermfg=161 ctermbg=000 cterm=none
-   hi Search                      ctermbg=000 cterm=bold cterm=italic
+   hi Search          ctermfg=220 ctermbg=236 cterm=bold
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235 cterm=none
@@ -100,7 +100,7 @@ if &t_Co > 255
 
    hi Normal          ctermfg=225 ctermbg=000 cterm=none
    hi Comment         ctermfg=137 ctermbg=000 cterm=none
-   hi CursorLine                  ctermbg=233 cterm=none
+   hi CursorLine                  ctermbg=235 cterm=none
    hi CursorColumn    ctermfg=000 ctermbg=000 cterm=none
    hi LineNr          ctermfg=241 ctermbg=000 cterm=none
    hi NonText         ctermfg=000 ctermbg=000 cterm=none
