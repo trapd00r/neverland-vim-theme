@@ -17,6 +17,95 @@ if version > 580
 endif
 let g:colors_name="neverland"
 
+" GUI color support added by stack_underflow 
+hi Boolean         guifg=#AF5FFF
+hi Character       guifg=#AFAF5F
+hi Number          guifg=#0087FF
+hi String          guifg=#D7AF5F
+hi Conditional     guifg=#FF0000               gui=bold
+hi Constant        guifg=#87AF00               gui=bold
+hi Cursor          guifg=#AFD787 guibg=#DADADA
+hi Debug           guifg=#FFD7FF               gui=bold
+hi Define          guifg=#5FD7FF
+hi Delimiter       guifg=#626262
+
+hi DiffAdd                       guibg=#005F87
+hi DiffChange      guifg=#D7AFAF guibg=#4E4E4E
+hi DiffDelete      guifg=#D70087 guibg=#5F005F
+hi DiffText                      guibg=#878787 gui=bold
+
+hi Directory       guifg=#87FF00               gui=bold
+hi Error           guifg=#FFAFFF guibg=#87005F
+hi ErrorMsg        guifg=#FF00AF guibg=#000000 gui=bold
+hi Exception       guifg=#87FF00               gui=bold
+hi Float           guifg=#AF5FFF
+hi FoldColumn      guifg=#5F87AF guibg=#000000
+hi Folded          guifg=#5F87AF guibg=#000000
+hi Function        guifg=#87FF00
+hi Identifier      guifg=#AFD75F
+hi Ignore          guifg=#808080 guibg=#080808
+hi IncSearch       guifg=#D7FFAF guibg=#000000
+
+hi Keyword         guifg=#87AFFF               gui=bold
+hi Label           guifg=#FFFFAF               gui=none
+hi Macro           guifg=#D7FFAF
+hi SpecialKey      guifg=#5FD7FF
+
+hi MatchParen      guifg=#FF0000 guibg=#1C1C1C gui=bold
+hi ModeMsg         guifg=#FFAF5F
+hi MoreMsg         guifg=#FFAF5F
+hi Operator        guifg=#AFD700
+
+" complete menu
+hi Pmenu           guifg=#5FD7FF guibg=#121212
+hi PmenuSel                      guibg=#262626
+hi PmenuSbar                     guibg=#080808
+hi PmenuThumb      guifg=#5FD7FF
+
+hi PreCondit       guifg=#87FF00               gui=bold
+hi PreProc         guifg=#FFAFD7
+hi Question        guifg=#5FD7FF
+hi Repeat          guifg=#D7005F               gui=bold
+hi Search          guifg=#1C1C1C guibg=#FFD787
+
+" marks column
+hi SignColumn      guifg=#87FF00 guibg=#262626
+hi SpecialChar     guifg=#D7005F               gui=bold
+hi SpecialComment  guifg=#8A8A8A               gui=bold
+hi Special         guifg=#5FD7FF guibg=#080808
+hi SpecialKey      guifg=#8A8A8A
+
+hi Statement       guifg=#D78700               gui=bold
+hi StatusLine      guifg=#1C1C1C guibg=#AF8700
+hi StatusLineNC    guifg=#1C1C1C guibg=#878700
+hi StorageClass    guifg=#FF8700
+hi Structure       guifg=#5FD7FF
+hi Tag             guifg=#D7005F
+hi Title           guifg=#5FAF5F
+hi Todo            guifg=#D70000 guibg=#121212 gui=bold
+
+hi Typedef         guifg=#5FD7FF
+hi Type            guifg=#D75F00               gui=none
+hi Underlined      guifg=#87AF00               gui=none
+
+hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
+hi VisualNOS                     guibg=#444444
+hi Visual                        guibg=#262626
+hi WarningMsg      guifg=#0000FF guibg=#444444 gui=bold
+hi WildMenu        guifg=#5FD7FF guibg=#000000
+
+hi Normal          guifg=#FFD7FF guibg=#121212
+hi Comment         guifg=#AF875F
+hi CursorLine                    guibg=#1C1C1C gui=none
+hi CursorColumn                  guibg=#121212
+hi LineNr          guifg=#626262 guibg=#121212
+hi NonText         guifg=#121212 guibg=#121212
+
+hi TabLine         guifg=#878700 guibg=#121212
+hi TabLineFill     guifg=#121212 guibg=#121212
+hi TabLineSel      guifg=#FFD700 guibg=#1C1C1C
+
+
 if &t_Co > 255
   " Setting normal before any other highlight group is a good idea
    hi Normal          ctermfg=225 ctermbg=233
