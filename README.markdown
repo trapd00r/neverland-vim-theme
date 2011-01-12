@@ -2,7 +2,7 @@ Neverland Vim Theme
 ====================
 All Vim themes suck.
 
-256 colors, CLI only.
+256 colors, CLI and GUI.
 
 ![screenshot](http://perl.japh.se/devel/neverland-vim-theme/neverland.png)
 
