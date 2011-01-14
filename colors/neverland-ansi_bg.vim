@@ -22,7 +22,7 @@ let g:colors_name="neverland-ansi_bg"
 
 if &t_Co > 255
    hi Normal          ctermfg=225 ctermbg=000 cterm=none
-   set backround=dark
+   set background=dark
 
    hi Boolean         ctermfg=135 ctermbg=000 cterm=bold
    hi Character       ctermfg=143 ctermbg=000 cterm=none
