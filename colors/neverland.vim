@@ -17,93 +17,97 @@ if version > 580
 endif
 let g:colors_name="neverland"
 
-" GUI color support added by stack_underflow 
-hi Boolean         guifg=#AF5FFF
-hi Character       guifg=#AFAF5F
-hi Number          guifg=#0087FF
-hi String          guifg=#D7AF5F
-hi Conditional     guifg=#FF0000               gui=bold
-hi Constant        guifg=#87AF00               gui=bold
-hi Cursor          guifg=#AFD787 guibg=#DADADA
-hi Debug           guifg=#FFD7FF               gui=bold
-hi Define          guifg=#5FD7FF
+" Setting normal before any other highlight group is a good idea
+hi Normal          guifg=#ffd7ff guibg=#121212
+
+" background might have changed to 'light', so fix it
+set background=dark
+
+hi Boolean         guifg=#af5fff
+hi Character       guifg=#afaf5f
+hi Number          guifg=#0087ff
+hi String          guifg=#d7af5f
+hi Conditional     guifg=#ff0000               gui=bold
+hi Constant        guifg=#87af00               gui=bold
+hi Cursor          guifg=#afd787 guibg=#dadada
+hi Debug           guifg=#ffd7ff               gui=bold
+hi Define          guifg=#5fd7ff
 hi Delimiter       guifg=#626262
 
-hi DiffAdd                       guibg=#005F87
-hi DiffChange      guifg=#D7AFAF guibg=#4E4E4E
-hi DiffDelete      guifg=#D70087 guibg=#5F005F
+hi DiffAdd                       guibg=#005f87
+hi DiffChange      guifg=#d7afaf guibg=#4e4e4e
+hi DiffDelete      guifg=#d70087 guibg=#5f005f
 hi DiffText                      guibg=#878787 gui=bold
 
-hi Directory       guifg=#87FF00               gui=bold
-hi Error           guifg=#FFAFFF guibg=#87005F
-hi ErrorMsg        guifg=#FF00AF guibg=#000000 gui=bold
-hi Exception       guifg=#87FF00               gui=bold
-hi Float           guifg=#AF5FFF
-hi FoldColumn      guifg=#5F87AF guibg=#000000
-hi Folded          guifg=#5F87AF guibg=#000000
-hi Function        guifg=#87FF00
-hi Identifier      guifg=#AFD75F
+hi Directory       guifg=#87ff00               gui=bold
+hi Error           guifg=#ffafff guibg=#87005f
+hi ErrorMsg        guifg=#ff00af guibg=#000000 gui=bold
+hi Exception       guifg=#87ff00               gui=bold
+hi Float           guifg=#af5fff
+hi FoldColumn      guifg=#5f87af guibg=#000000
+hi Folded          guifg=#5f87af guibg=#000000
+hi Function        guifg=#87ff00
+hi Identifier      guifg=#afd75f
 hi Ignore          guifg=#808080 guibg=#080808
-hi IncSearch       guifg=#D7FFAF guibg=#000000
+hi IncSearch       guifg=#d7ffaf guibg=#000000
 
-hi Keyword         guifg=#87AFFF               gui=bold
-hi Label           guifg=#FFFFAF               gui=none
-hi Macro           guifg=#D7FFAF
-hi SpecialKey      guifg=#5FD7FF
+hi Keyword         guifg=#87afff               gui=bold
+hi Label           guifg=#ffffaf               gui=none
+hi Macro           guifg=#d7ffaf
+hi SpecialKey      guifg=#5fd7ff
 
-hi MatchParen      guifg=#FF0000 guibg=#1C1C1C gui=bold
-hi ModeMsg         guifg=#FFAF5F
-hi MoreMsg         guifg=#FFAF5F
-hi Operator        guifg=#AFD700
+hi MatchParen      guifg=#ff0000 guibg=#1c1c1c gui=bold
+hi ModeMsg         guifg=#ffaf5f
+hi MoreMsg         guifg=#ffaf5f
+hi Operator        guifg=#afd700
 
 " complete menu
-hi Pmenu           guifg=#5FD7FF guibg=#121212
+hi Pmenu           guifg=#5fd7ff guibg=#121212
 hi PmenuSel                      guibg=#262626
 hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#5FD7FF
+hi PmenuThumb      guifg=#5fd7ff
 
-hi PreCondit       guifg=#87FF00               gui=bold
-hi PreProc         guifg=#FFAFD7
-hi Question        guifg=#5FD7FF
-hi Repeat          guifg=#D7005F               gui=bold
-hi Search          guifg=#1C1C1C guibg=#FFD787
+hi PreCondit       guifg=#87ff00               gui=bold
+hi PreProc         guifg=#ffafd7
+hi Question        guifg=#5fd7ff
+hi Repeat          guifg=#d7005f               gui=bold
+hi Search          guifg=#1c1c1c guibg=#ffd787
 
 " marks column
-hi SignColumn      guifg=#87FF00 guibg=#262626
-hi SpecialChar     guifg=#D7005F               gui=bold
-hi SpecialComment  guifg=#8A8A8A               gui=bold
-hi Special         guifg=#5FD7FF guibg=#080808
-hi SpecialKey      guifg=#8A8A8A
+hi SignColumn      guifg=#87ff00 guibg=#262626
+hi SpecialChar     guifg=#d7005f               gui=bold
+hi SpecialComment  guifg=#8a8a8a               gui=bold
+hi Special         guifg=#5fd7ff guibg=#080808
+hi SpecialKey      guifg=#8a8a8a
 
-hi Statement       guifg=#D78700               gui=bold
-hi StatusLine      guifg=#1C1C1C guibg=#AF8700
-hi StatusLineNC    guifg=#1C1C1C guibg=#878700
-hi StorageClass    guifg=#FF8700
-hi Structure       guifg=#5FD7FF
-hi Tag             guifg=#D7005F
-hi Title           guifg=#5FAF5F
-hi Todo            guifg=#D70000 guibg=#121212 gui=bold
+hi Statement       guifg=#d78700               gui=bold
+hi StatusLine      guifg=#1c1c1c guibg=#af8700
+hi StatusLineNC    guifg=#1c1c1c guibg=#878700
+hi StorageClass    guifg=#ff8700
+hi Structure       guifg=#5fd7ff
+hi Tag             guifg=#d7005f
+hi Title           guifg=#5faf5f
+hi Todo            guifg=#d70000 guibg=#121212 gui=bold
 
-hi Typedef         guifg=#5FD7FF
-hi Type            guifg=#D75F00               gui=none
-hi Underlined      guifg=#87AF00               gui=none
+hi Typedef         guifg=#5fd7ff
+hi Type            guifg=#d75f00               gui=none
+hi Underlined      guifg=#87af00               gui=none
 
 hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
 hi VisualNOS                     guibg=#444444
 hi Visual                        guibg=#262626
-hi WarningMsg      guifg=#0000FF guibg=#444444 gui=bold
-hi WildMenu        guifg=#5FD7FF guibg=#000000
+hi WarningMsg      guifg=#0000ff guibg=#444444 gui=bold
+hi WildMenu        guifg=#5fd7ff guibg=#000000
 
-hi Normal          guifg=#FFD7FF guibg=#121212
-hi Comment         guifg=#AF875F
-hi CursorLine                    guibg=#1C1C1C gui=none
+hi Comment         guifg=#af875f
+hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#121212
 hi LineNr          guifg=#626262 guibg=#121212
 hi NonText         guifg=#121212 guibg=#121212
 
 hi TabLine         guifg=#878700 guibg=#121212
 hi TabLineFill     guifg=#121212 guibg=#121212
-hi TabLineSel      guifg=#FFD700 guibg=#1C1C1C
+hi TabLineSel      guifg=#ffd700 guibg=#1c1c1c
 
 
 if &t_Co > 255

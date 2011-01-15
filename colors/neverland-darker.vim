@@ -15,6 +15,95 @@ if version > 580
 endif
 let g:colors_name="neverland-darker"
 
+hi Normal          guifg=#ffd7ff guibg=#080808
+set background=dark
+
+hi Boolean         guifg=#af5fff
+hi Character       guifg=#afaf5f
+hi Number          guifg=#0087ff
+hi String          guifg=#d7af5f
+hi Conditional     guifg=#ff0000               gui=bold
+hi Constant        guifg=#87af00               gui=bold
+hi Cursor          guifg=#afd787 guibg=#dadada
+hi Debug           guifg=#ffd7ff               gui=bold
+hi Define          guifg=#5fd7ff
+hi Delimiter       guifg=#626262
+
+hi DiffAdd                       guibg=#005f87
+hi DiffChange      guifg=#d7afaf guibg=#4e4e4e
+hi DiffDelete      guifg=#d70087 guibg=#5f005f
+hi DiffText                      guibg=#878787 gui=bold
+
+hi Directory       guifg=#87ff00               gui=bold
+hi Error           guifg=#ffafff guibg=#87005f
+hi ErrorMsg        guifg=#ff00af guibg=#000000 gui=bold
+hi Exception       guifg=#87ff00               gui=bold
+hi Float           guifg=#af5fff
+hi FoldColumn      guifg=#5f87af guibg=#000000
+hi Folded          guifg=#5f87af guibg=#000000
+hi Function        guifg=#87ff00
+hi Identifier      guifg=#afd75f
+hi Ignore          guifg=#808080 guibg=#080808
+hi IncSearch       guifg=#d7ffaf guibg=#000000
+
+hi Keyword         guifg=#87afff               gui=bold
+hi Label           guifg=#ffffaf               gui=none
+hi Macro           guifg=#d7ffaf
+hi SpecialKey      guifg=#5fd7ff
+
+hi MatchParen      guifg=#ff0000 guibg=#1c1c1c gui=bold
+hi ModeMsg         guifg=#ffaf5f
+hi MoreMsg         guifg=#ffaf5f
+hi Operator        guifg=#afd700
+
+" complete menu
+hi Pmenu           guifg=#5fd7ff guibg=#262626
+hi PmenuSel                      guibg=#262626
+hi PmenuSbar                     guibg=#262626
+hi PmenuThumb      guifg=#5fd7ff
+
+hi PreCondit       guifg=#87ff00               gui=bold
+hi PreProc         guifg=#ffafd7
+hi Question        guifg=#5fd7ff
+hi Repeat          guifg=#d7005f               gui=bold
+hi Search          guifg=#1c1c1c guibg=#ffd787
+
+" marks column
+hi SignColumn      guifg=#87ff00 guibg=#262626
+hi SpecialChar     guifg=#d7005f               gui=bold
+hi SpecialComment  guifg=#8a8a8a               gui=bold
+hi Special         guifg=#5fd7ff guibg=#080808
+hi SpecialKey      guifg=#8a8a8a
+
+hi Statement       guifg=#d78700               gui=bold
+hi StatusLine      guifg=#121212 guibg=#af8700
+hi StatusLineNC    guifg=#080808 guibg=#878700
+hi StorageClass    guifg=#ff8700
+hi Structure       guifg=#5fd7ff
+hi Tag             guifg=#d7005f
+hi Title           guifg=#5faf5f
+hi Todo            guifg=#d70000 guibg=#080808 gui=bold
+
+hi Typedef         guifg=#5fd7ff
+hi Type            guifg=#d75f00               gui=none
+hi Underlined      guifg=#87af00               gui=none
+
+hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
+hi VisualNOS                     guibg=#444444
+hi Visual                        guibg=#262626
+hi WarningMsg      guifg=#0000ff guibg=#444444 gui=bold
+hi WildMenu        guifg=#5fd7ff guibg=#000000
+
+hi Comment         guifg=#af875f
+hi CursorLine                    guibg=#121212 gui=none
+hi CursorColumn                  guibg=#080808
+hi LineNr          guifg=#626262 guibg=#080808
+hi NonText         guifg=#080808 guibg=#080808
+
+hi TabLine         guifg=#878700 guibg=#080808
+hi TabLineFill     guifg=#080808 guibg=#121212
+hi TabLineSel      guifg=#ffd700 guibg=#1c1c1c
+
 if &t_Co > 255
    hi Normal          ctermfg=225 ctermbg=232
    set background=dark
