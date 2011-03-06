@@ -11,11 +11,11 @@ The GUI conversations are made by Sam Lidder.
 Installation and Source
 ============
 
-![Vim Wiki](http://vim.wikia.com/wiki/Neverland_Vim_Theme)
+[Vim Wiki](http://vim.wikia.com/wiki/Neverland_Vim_Theme "Vim Wiki")
 
-![Vim Scripts directory](http://www.vim.org/scripts/script.php?script_id=3397)
+[Vim Scripts directory](http://www.vim.org/scripts/script.php?script_id=3397 "Vim Script directory")
 
-![Git Repository](http://github.com/trapd00r/neverland-vim-theme)
+[Git Repository](http://github.com/trapd00r/neverland-vim-theme "Git Repository")
 
 Copy the themes to $HOME/.vim/colors
 
