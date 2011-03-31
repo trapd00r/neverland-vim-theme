@@ -75,6 +75,11 @@ hi SpecialComment  guifg=#8a8a8a               gui=bold
 hi Special         guifg=#5fd7ff guibg=#080808
 hi SpecialKey      guifg=#8a8a8a
 
+hi SpellBad        guifg=#ff0000 guibg=#080808  gui=bold
+hi SpellCap        guifg=#ff0000 guibg=#080808  gui=bold
+hi SpellRare       guifg=#ff0000 guibg=#080808  gui=bold
+hi SpellLocal      guifg=#ff0000 guibg=#141414  gui=bold
+
 hi Statement       guifg=#ffff87               gui=bold " my...
 hi StatusLine      guifg=#1c1c1c guibg=#af8700
 hi StatusLineNC    guifg=#1c1c1c guibg=#878700
@@ -165,6 +170,11 @@ if &t_Co > 255
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
    hi SpecialKey      ctermfg=245
+
+   hi SpellBad        ctermfg=196 ctermbg=233  cterm=bold
+   hi SpellCap        ctermfg=196 ctermbg=233  cterm=bold
+   hi SpellRare       ctermfg=196 ctermbg=233  cterm=bold
+   hi SpellLocal      ctermfg=196 ctermbg=235  cterm=bold
 
    hi Statement       ctermfg=228               cterm=bold " my...
    hi StatusLine      ctermfg=234 ctermbg=136
