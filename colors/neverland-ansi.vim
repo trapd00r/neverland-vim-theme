@@ -4,7 +4,16 @@
 " This colorscheme uses ANSI colors for the background due to the extended
 " colors not providing a dark enough grey.
 " This means that it'll look awful if you happen to have i.e pink defined as
-" your 'grey/black' color.
+" your 'grey/black' color. Mine is #121212.
+"
+" This issue can be solved by changing, for example, color index 232 to the
+" desired shade. This can be accomplished with colorcoke [1], can be made
+" persistent with my rxvt-unicode fork [2], and can be visually represented with
+" rgbterm [3].
+"
+" 1: https://github.com/trapd00r/colorcoke
+" 2: https://github.com/trapd00r/rxvt-unicode
+" 3: https://github.com/trapd00r/rgbterm
 "
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
@@ -80,6 +89,11 @@ if &t_Co > 255
    hi SpecialComment  ctermfg=245 ctermbg=000 cterm=bold
    hi Special         ctermfg=172 ctermbg=000 cterm=bold  " \n, /laleh/
    hi SpecialKey      ctermfg=245 ctermbg=000 cterm=none
+
+   hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
+   hi SpellCap        ctermfg=196 ctermbg=233 cterm=bold
+   hi SpellRare       ctermfg=196 ctermbg=233 cterm=bold
+   hi SpellLocal      ctermfg=124 ctermbg=233 cterm=bold
 
    hi Statement       ctermfg=202 ctermbg=000 cterm=none
    hi StatusLine      ctermfg=197 ctermbg=232 cterm=none
