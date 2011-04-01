@@ -100,6 +100,7 @@ hi WarningMsg      guifg=#0000ff guibg=#444444 gui=bold
 hi WildMenu        guifg=#5fd7ff guibg=#000000
 
 hi Comment         guifg=#87875f
+hi ColorColumn                   guibg=#202020
 hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#1c1c1c
 hi LineNr          guifg=#626262 guibg=#121212
@@ -192,10 +193,11 @@ if &t_Co > 255
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=238
    hi Visual                      ctermbg=235
-   hi WarningMsg      ctermfg=21 ctermbg=238   cterm=bold
+   hi WarningMsg      ctermfg=21  ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Comment         ctermfg=101
+   hi ColorColumn                 ctermbg=235
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=234
    hi LineNr          ctermfg=241 ctermbg=233

@@ -100,6 +100,7 @@ hi WarningMsg      guifg=#0000ff guibg=#444444 gui=bold
 hi WildMenu        guifg=#5fd7ff guibg=#000000
 
 hi Comment         guifg=#af875f
+hi ColorColumn                   guibg=#202020
 hi CursorLine                    guibg=#121212 gui=none
 hi CursorColumn                  guibg=#080808
 hi LineNr          guifg=#626262 guibg=#080808
@@ -195,6 +196,7 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Comment         ctermfg=137
+   hi ColorColumn                 ctermbg=235
    hi CursorLine                  ctermbg=233   cterm=none
    hi CursorColumn                ctermbg=232
    hi LineNr          ctermfg=241 ctermbg=232
