@@ -1,12 +1,11 @@
 Neverland Vim Theme
 ====================
-All Vim themes suck.
 
 256 colors, CLI and GUI.
 
 The GUI conversations are made by Sam Lidder.
 
-![screenshot](http://perl.japh.se/devel/vim-perl-after/vim-perl-after-3.png)
+![neverland](http://devel.japh.se/neverland-vim-theme/neverland.png)
 
 Installation and Source
 ============
@@ -17,7 +16,7 @@ Installation and Source
 
 [Git Repository](http://github.com/trapd00r/neverland-vim-theme "Git Repository")
 
-Copy the themes to $HOME/.vim/colors
+Copy the colorschemes to $HOME/.vim/colors
 
 License
 =======
