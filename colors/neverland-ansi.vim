@@ -54,9 +54,9 @@ if &t_Co > 255
    hi ErrorMsg        ctermfg=199 ctermbg=016 cterm=bold
    hi Exception       ctermfg=118 ctermbg=000 cterm=bold
    hi Float           ctermfg=135 ctermbg=000 cterm=bold
-   hi FoldColumn      ctermfg=67  ctermbg=016 cterm=none
-   hi Folded          ctermfg=67  ctermbg=016 cterm=none
-   hi Function        ctermfg=33 ctermbg=000 cterm=bold " sub laleh 
+   hi FoldColumn      ctermfg=67  ctermbg=233 cterm=none
+   hi Folded          ctermfg=240 ctermbg=235 cterm=bold
+   hi Function        ctermfg=33  ctermbg=000 cterm=bold " sub laleh 
    hi Identifier      ctermfg=148 ctermbg=000 cterm=none " $laleh
    hi Ignore          ctermfg=244 ctermbg=232 cterm=none
    hi IncSearch       ctermfg=193 ctermbg=196 cterm=bold
