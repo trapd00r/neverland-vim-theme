@@ -3,20 +3,23 @@ Neverland Vim Theme
 
 256 colors, CLI and GUI.
 
-The GUI conversations are made by Sam Lidder.
+The original GUI conversations was made by Sam Lidder. I'm trying to maintain
+them, but I do not use gVim myself and I can't test it. Please send me a pull
+request if you notice something awkward there. :-)
 
-![neverland](http://devel.japh.se/neverland-vim-theme/neverland.png)
+![neverland](http://devel.japh.se/neverland-vim-theme/perl_viml.png)
 
 Installation and Source
 ============
 
 [Vim Wiki](http://vim.wikia.com/wiki/Neverland_Vim_Theme "Vim Wiki")
 
-[Vim Scripts directory](http://www.vim.org/scripts/script.php?script_id=3397 "Vim Script directory")
+[Git Repository](http://github.com/trapd00r/neverland-vim-theme "Git Repository") (fresh)
 
-[Git Repository](http://github.com/trapd00r/neverland-vim-theme "Git Repository")
+[Vim Scripts directory](http://www.vim.org/scripts/script.php?script_id=3397 "Vim Script directory") (outdated)
 
-Copy the colorschemes to $HOME/.vim/colors
+Copy the colorscheme(s) to your $VIMRUNTIME/colors directory (most often
+$HOME/.vim/colors/).
 
 License
 =======
