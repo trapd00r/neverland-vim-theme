@@ -55,7 +55,7 @@ if &t_Co > 255
    hi Exception       ctermfg=118 ctermbg=000 cterm=bold
    hi Float           ctermfg=135 ctermbg=000 cterm=bold
    hi FoldColumn      ctermfg=67  ctermbg=233 cterm=none
-   hi Folded          ctermfg=240 ctermbg=235 cterm=bold
+   hi Folded          ctermfg=241 ctermbg=235 cterm=bold
    hi Function        ctermfg=33  ctermbg=000 cterm=bold " sub laleh 
    hi Identifier      ctermfg=148 ctermbg=000 cterm=none " $laleh
    hi Ignore          ctermfg=244 ctermbg=232 cterm=none
