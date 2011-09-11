@@ -39,8 +39,8 @@ hi Error           guifg=#ffafff guibg=#121212
 hi ErrorMsg        guifg=#ff00af guibg=#121212 gui=bold
 hi Exception       guifg=#87ff00               gui=bold
 hi Float           guifg=#af5fff
-hi FoldColumn      guifg=#5f87af guibg=#000000
-hi Folded          guifg=#5f87af guibg=#000000
+hi FoldColumn      guifg=#5f87af  guibg=#121212 gui=none
+hi Folded          guifg=#585858  guibg=#262626 gui=bold
 hi Function        guifg=#ff005f " sub..
 hi Identifier      guifg=#d75f00 " ..foo
 hi Ignore          guifg=#808080 guibg=#080808
@@ -57,10 +57,10 @@ hi MoreMsg         guifg=#ffaf5f
 hi Operator        guifg=#00ff00
 
 " complete menu
-hi Pmenu           guifg=#5fd7ff guibg=#121212
-hi PmenuSel                      guibg=#262626
-hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#5fd7ff
+hi Pmenu           guifg=#af875f guibg=#000000 gui=none
+hi PmenuSel        guifg=#ff0000 guibg=#262626 gui=bold
+hi PmenuSbar       guifg=#000000 guibg=#121212 gui=none
+hi PmenuThumb      guifg=#af875f guibg=#000000 gui=none
 
 hi PreCondit       guifg=#87ff00               gui=bold
 hi PreProc         guifg=#ffafd7
@@ -72,13 +72,13 @@ hi Search          guifg=#d70000 guibg=#121212
 hi SignColumn      guifg=#87ff00 guibg=#262626
 hi SpecialChar     guifg=#d7005f               gui=bold
 hi SpecialComment  guifg=#8a8a8a               gui=bold
-hi Special         guifg=#5fd7ff guibg=#080808
+hi Special         guifg=#5fd7ff  guibg=#080808
 hi SpecialKey      guifg=#8a8a8a
 
-hi SpellBad        guifg=#ff0000 guibg=#080808  gui=bold
-hi SpellCap        guifg=#ff0000 guibg=#080808  gui=bold
-hi SpellRare       guifg=#ff0000 guibg=#080808  gui=bold
-hi SpellLocal      guifg=#ff0000 guibg=#141414  gui=bold
+hi SpellBad        guifg=#ff0000 guibg=#121212 gui=bold
+hi SpellCap        guifg=#ff0000 guibg=#121212 gui=bold
+hi SpellRare       guifg=#ff0000 guibg=#121212 gui=bold
+hi SpellLocal      guifg=#ff0000 guibg=#262626 gui=bold
 
 hi Statement       guifg=#ffff87               gui=bold " my...
 hi StatusLine      guifg=#1c1c1c guibg=#af8700
@@ -100,7 +100,7 @@ hi WarningMsg      guifg=#0000ff guibg=#444444 gui=bold
 hi WildMenu        guifg=#5fd7ff guibg=#000000
 
 hi Comment         guifg=#87875f
-hi ColorColumn                   guibg=#202020
+hi ColorColumn                   guibg=#262626
 hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#1c1c1c
 hi LineNr          guifg=#626262 guibg=#121212
@@ -154,10 +154,10 @@ if &t_Co > 255
    hi Operator        ctermfg=46
 
    " complete menu
-   hi Pmenu           ctermfg=137 ctermbg=000 cterm=none
+   hi Pmenu           ctermfg=137 ctermbg=16  cterm=none
    hi PmenuSel        ctermfg=196 ctermbg=235 cterm=bold
-   hi PmenuSbar       ctermfg=000 ctermbg=233 cterm=none
-   hi PmenuThumb      ctermfg=137 ctermbg=000 cterm=none
+   hi PmenuSbar       ctermfg=16  ctermbg=233 cterm=none
+   hi PmenuThumb      ctermfg=137 ctermbg=16  cterm=none
 
    hi PreCondit       ctermfg=118               cterm=bold
    hi PreProc         ctermfg=218
