@@ -15,7 +15,7 @@
 " 2: https://github.com/trapd00r/rxvt-unicode
 " 3: https://github.com/trapd00r/rgbterm
 "
-" Author: Magnus Woldrich <trapd00r@trapd00r.se>
+" Author: Magnus Woldrich <m@japh.se>
 
 set background=dark
 hi clear
@@ -72,10 +72,10 @@ if &t_Co > 255
    hi Operator        ctermfg=197 ctermbg=000 cterm=bold " defined, eq
 
    " complete menu
-   hi Pmenu           ctermfg=137 ctermbg=000 cterm=none
-   hi PmenuSel        ctermfg=196 ctermbg=235 cterm=bold
+   hi Pmenu           ctermfg=137 ctermbg=233 cterm=none
+   hi PmenuSel        ctermfg=196 ctermbg=234 cterm=bold
    hi PmenuSbar       ctermfg=000 ctermbg=233 cterm=none
-   hi PmenuThumb      ctermfg=137 ctermbg=000 cterm=none
+   hi PmenuThumb      ctermfg=137 ctermbg=235 cterm=none
 
    hi PreCondit       ctermfg=118 ctermbg=000 cterm=none
    hi PreProc         ctermfg=218 ctermbg=000 cterm=none
