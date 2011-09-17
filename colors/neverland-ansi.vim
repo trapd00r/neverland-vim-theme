@@ -91,8 +91,8 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=245 ctermbg=000 cterm=none
 
    hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
-   hi SpellCap        ctermfg=196 ctermbg=233 cterm=bold
-   hi SpellRare       ctermfg=196 ctermbg=233 cterm=bold
+   hi SpellCap        ctermfg=094 ctermbg=233 cterm=bold
+   hi SpellRare       ctermfg=096 ctermbg=233 cterm=bold
    hi SpellLocal      ctermfg=124 ctermbg=233 cterm=bold
 
    hi Statement       ctermfg=202 ctermbg=000 cterm=none
