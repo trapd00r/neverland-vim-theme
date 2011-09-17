@@ -76,9 +76,9 @@ hi Special         guifg=#5fd7ff  guibg=#080808
 hi SpecialKey      guifg=#8a8a8a
 
 hi SpellBad        guifg=#ff0000 guibg=#121212 gui=bold
-hi SpellCap        guifg=#ff0000 guibg=#121212 gui=bold
-hi SpellRare       guifg=#ff0000 guibg=#121212 gui=bold
-hi SpellLocal      guifg=#ff0000 guibg=#262626 gui=bold
+hi SpellCap        guifg=#875f00 guibg=#121212 gui=bold
+hi SpellRare       guifg=#875f87 guibg=#121212 gui=bold
+hi SpellLocal      guifg=#af0000 guibg=#121212 gui=bold
 
 hi Statement       guifg=#ffff87               gui=bold " my...
 hi StatusLine      guifg=#1c1c1c guibg=#af8700
@@ -172,10 +172,10 @@ if &t_Co > 255
    hi Special         ctermfg=81  ctermbg=232
    hi SpecialKey      ctermfg=245
 
-   hi SpellBad        ctermfg=196 ctermbg=233  cterm=bold
-   hi SpellCap        ctermfg=196 ctermbg=233  cterm=bold
-   hi SpellRare       ctermfg=196 ctermbg=233  cterm=bold
-   hi SpellLocal      ctermfg=196 ctermbg=235  cterm=bold
+   hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
+   hi SpellCap        ctermfg=094 ctermbg=233 cterm=bold
+   hi SpellRare       ctermfg=096 ctermbg=233 cterm=bold
+   hi SpellLocal      ctermfg=124 ctermbg=233 cterm=bold
 
    hi Statement       ctermfg=228               cterm=bold " my...
    hi StatusLine      ctermfg=234 ctermbg=136
