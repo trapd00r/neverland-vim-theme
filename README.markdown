@@ -7,6 +7,7 @@ The original GUI conversations was made by Sam Lidder. I'm trying to maintain
 them, but I do not use gVim myself and I can't test it. Please send me a pull
 request if you notice something awkward there. :-)
 
+![neverland](http://devel.japh.se/neverland-vim-theme/n900.png)
 ![neverland](http://devel.japh.se/neverland-vim-theme/perl_viml.png)
 
 Installation and Source
@@ -19,7 +20,7 @@ Installation and Source
 [Vim Scripts directory](http://www.vim.org/scripts/script.php?script_id=3397 "Vim Script directory") (outdated)
 
 Copy the colorscheme(s) to your $VIMRUNTIME/colors directory (most often
-$HOME/.vim/colors/).
+$HOME/.vim/colors/) or use pathogen.
 
 License
 =======
