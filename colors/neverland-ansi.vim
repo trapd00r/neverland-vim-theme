@@ -30,7 +30,7 @@ endif
 let g:colors_name="neverland-ansi_bg"
 
 if &t_Co > 255
-   hi Normal          ctermfg=225 ctermbg=000 cterm=none
+   hi Normal          ctermfg=225 ctermbg=16 cterm=none
    set background=dark
 
    hi Boolean         ctermfg=135 ctermbg=000 cterm=bold
@@ -54,7 +54,7 @@ if &t_Co > 255
    hi ErrorMsg        ctermfg=199 ctermbg=016 cterm=bold
    hi Exception       ctermfg=118 ctermbg=000 cterm=bold
    hi Float           ctermfg=135 ctermbg=000 cterm=bold
-   hi FoldColumn      ctermfg=67  ctermbg=233 cterm=none
+   hi FoldColumn      ctermfg=67  ctermbg=232 cterm=none
    hi Folded          ctermfg=241 ctermbg=235 cterm=bold
    hi Function        ctermfg=33  ctermbg=000 cterm=bold " sub laleh 
    hi Identifier      ctermfg=148 ctermbg=000 cterm=none " $laleh
@@ -72,9 +72,9 @@ if &t_Co > 255
    hi Operator        ctermfg=197 ctermbg=000 cterm=bold " defined, eq
 
    " complete menu
-   hi Pmenu           ctermfg=137 ctermbg=233 cterm=none
+   hi Pmenu           ctermfg=137 ctermbg=232 cterm=none
    hi PmenuSel        ctermfg=196 ctermbg=234 cterm=bold
-   hi PmenuSbar       ctermfg=000 ctermbg=233 cterm=none
+   hi PmenuSbar       ctermfg=000 ctermbg=232 cterm=none
    hi PmenuThumb      ctermfg=137 ctermbg=235 cterm=none
 
    hi PreCondit       ctermfg=118 ctermbg=000 cterm=none
@@ -86,14 +86,14 @@ if &t_Co > 255
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235 cterm=none
    hi SpecialChar     ctermfg=161 ctermbg=000 cterm=none
-   hi SpecialComment  ctermfg=245 ctermbg=000 cterm=bold
+   hi SpecialComment  ctermfg=245 ctermbg=000 cterm=italic
    hi Special         ctermfg=172 ctermbg=000 cterm=bold  " \n, /laleh/
    hi SpecialKey      ctermfg=245 ctermbg=000 cterm=none
 
-   hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
-   hi SpellCap        ctermfg=094 ctermbg=233 cterm=bold
-   hi SpellRare       ctermfg=096 ctermbg=233 cterm=bold
-   hi SpellLocal      ctermfg=124 ctermbg=233 cterm=bold
+   hi SpellBad        ctermfg=196 ctermbg=232 cterm=bold
+   hi SpellCap        ctermfg=094 ctermbg=232 cterm=bold
+   hi SpellRare       ctermfg=096 ctermbg=232 cterm=bold
+   hi SpellLocal      ctermfg=124 ctermbg=232 cterm=bold
 
    hi Statement       ctermfg=202 ctermbg=000 cterm=none
    hi StatusLine      ctermfg=197 ctermbg=232 cterm=none
@@ -114,7 +114,7 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=21  ctermbg=238 cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=016 cterm=none
 
-   hi Comment         ctermfg=137 ctermbg=000 cterm=none
+   hi Comment         ctermfg=137 ctermbg=000 cterm=italic
    hi ColorColumn     ctermfg=000 ctermbg=235 cterm=none
    hi CursorLine                  ctermbg=235 cterm=none
    hi CursorColumn    ctermfg=000 ctermbg=000 cterm=none
@@ -122,6 +122,6 @@ if &t_Co > 255
    hi NonText         ctermfg=000 ctermbg=000 cterm=none
 
    hi TabLine         ctermfg=100 ctermbg=000 cterm=none
-   hi TabLineFill     ctermfg=000 ctermbg=233 cterm=none
+   hi TabLineFill     ctermfg=000 ctermbg=232 cterm=none
    hi TabLineSel      ctermfg=220 ctermbg=234 cterm=none
 end
