@@ -7,8 +7,8 @@ The original GUI conversations was made by Sam Lidder. I'm trying to maintain
 them, but I do not use gVim myself and I can't test it. Please send me a pull
 request if you notice something awkward there. :-)
 
-![neverland](http://devel.japh.se/neverland-vim-theme/n900.png)
 ![neverland](http://devel.japh.se/neverland-vim-theme/perl_viml.png)
+![neverland](http://devel.japh.se/neverland-vim-theme/n900.png)
 
 Installation and Source
 ============
