@@ -1,4 +1,4 @@
-" Vim color file - neverland-ansi_bg.vim
+" Vim color file - neverland-ansi-two.vim
 " Eyes are sober, this is the plan
 "
 " This colorscheme uses ANSI colors for the background due to the extended
