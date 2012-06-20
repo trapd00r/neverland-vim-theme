@@ -8,6 +8,14 @@ if !exists("g:neverland_bold")
     let g:neverland_bold = 1
 endif
 
+if !exists("g:neverland_show_NonText")
+    let g:neverland_show_NonText = 0
+endif
+
+if !exists("g:neverland_show_SpecialKey")
+    let g:neverland_show_SpecialKey = 0
+endif
+
 " Set background first
 set background=dark
 hi clear
@@ -76,7 +84,6 @@ hi IncSearch       guifg=#d7ffaf guibg=#000000
 hi Keyword         guifg=#87afff               gui=bold
 hi Label           guifg=#ffffaf               gui=none
 hi Macro           guifg=#d7ffaf
-hi SpecialKey      guifg=#5fd7ff
 
 hi MatchParen      guifg=#ff0000 guibg=#1c1c1c gui=bold
 hi ModeMsg         guifg=#ffaf5f
@@ -100,7 +107,11 @@ hi SignColumn      guifg=#87ff00 guibg=#262626
 hi SpecialChar     guifg=#d7005f               gui=bold
 hi SpecialComment  guifg=#8a8a8a               gui=bold
 hi Special         guifg=#5fd7ff guibg=#080808
-hi SpecialKey      guifg=#8a8a8a
+if g:neverland_show_SpecialKey == 1
+    hi SpecialKey      guifg=#8a8a8a guibg=#121212
+else
+    hi SpecialKey      guifg=#8a8a8a
+endif
 
 hi SpellBad        guifg=#ff0000 guibg=#121212 gui=bold
 hi SpellCap        guifg=#875f00 guibg=#121212 gui=bold
@@ -131,7 +142,11 @@ hi ColorColumn                   guibg=#262626
 hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#121212
 hi LineNr          guifg=#626262 guibg=#121212
-hi NonText         guifg=#121212 guibg=#121212
+if g:neverland_show_NonText == 1
+    hi NonText         guifg=#626262 guibg=#121212
+else
+    hi NonText         guifg=#121212 guibg=#121212
+endif
 
 hi TabLine         guifg=#878700 guibg=#121212
 hi TabLineFill     guifg=#121212 guibg=#121212
@@ -176,7 +191,6 @@ if &t_Co > 255
    hi Keyword         ctermfg=111               cterm=bold
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
-   hi SpecialKey      ctermfg=81
 
    hi MatchParen      ctermfg=196 ctermbg=234   cterm=bold
    hi ModeMsg         ctermfg=215
@@ -200,7 +214,11 @@ if &t_Co > 255
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
-   hi SpecialKey      ctermfg=245
+   if g:neverland_show_SpecialKey == 1
+       hi SpecialKey      ctermfg=245 ctermbg=233
+   else
+       hi SpecialKey      ctermfg=245
+   endif
 
    hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
    hi SpellCap        ctermfg=094 ctermbg=233 cterm=bold
@@ -231,7 +249,11 @@ if &t_Co > 255
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=233
    hi LineNr          ctermfg=241 ctermbg=233
-   hi NonText         ctermfg=233 ctermbg=233
+   if g:neverland_show_NonText == 1
+       hi NonText         ctermfg=241 ctermbg=233
+   else
+       hi NonText         ctermfg=233 ctermbg=233
+   endif
 
    hi TabLine         ctermfg=100 ctermbg=233
    hi TabLineFill     ctermfg=233 ctermbg=233
