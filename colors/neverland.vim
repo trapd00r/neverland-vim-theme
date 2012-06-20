@@ -3,6 +3,10 @@
 " I'm sitting in a car heading Neverland
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
+" set default theme settings unless already set by user
+if !exists("g:neverland_bold")
+    let g:neverland_bold = 1
+endif
 
 " Set background first
 set background=dark
@@ -16,6 +20,24 @@ if version > 580
     endif
 endif
 let g:colors_name="neverland"
+
+let s:hi_groups = [ "Boolean", "Character", "ColorColumn", "Comment",
+            \ "Conceal", "Conditional", "Constant", "Cursor", "CursorColumn",
+            \ "CursorIM", "CursorLine", "CursorLineNr", "Debug", "Define",
+            \ "Delimiter", "DiffAdd", "DiffChange", "DiffDelete", "DiffText",
+            \ "Directory", "Error", "ErrorMsg", "Exception", "Float",
+            \ "FoldColumn", "Folded", "Function", "Identifier", "Ignore",
+            \ "Include", "IncSearch", "Keyword", "Label", "LineNr", "Macro",
+            \ "MatchParen", "Menu", "ModeMsg", "MoreMsg", "NonText",
+            \ "Normal", "Number", "Operator", "Pmenu", "PmenuSbar",
+            \ "PmenuSel", "PmenuThumb", "PreCondit", "PreProc", "Question",
+            \ "Repeat", "Scrollbar", "Search", "SignColumn", "Special",
+            \ "SpecialChar", "SpecialComment", "SpecialKey", "SpellBad",
+            \ "SpellCap", "SpellLocal", "SpellRare", "Statement",
+            \ "StatusLine", "StatusLineNC", "StorageClass", "String",
+            \ "Structure", "TabLine", "TabLineFill", "TabLineSel", "Tag",
+            \ "Title", "Todo", "Tooltip", "Type", "Typedef", "Underlined",
+            \ "VertSplit", "Visual", "VisualNOS", "WarningMsg", "WildMenu" ]
 
 " Setting normal before any other highlight group is a good idea
 hi Normal          guifg=#ffd7ff guibg=#121212
@@ -215,3 +237,13 @@ if &t_Co > 255
    hi TabLineFill     ctermfg=233 ctermbg=233
    hi TabLineSel      ctermfg=220 ctermbg=234
 end
+
+if g:neverland_bold == 0
+    for s:group in s:hi_groups
+        if s:group =~ "StatusLine"
+            execute "hi " . s:group . " cterm=inverse gui=inverse"
+        else
+            execute "hi " . s:group . " cterm=none gui=none"
+        endif
+    endfor
+endif
