@@ -7,6 +7,8 @@ The original GUI conversations was made by Sam Lidder. I'm trying to maintain
 them, but I do not use gVim myself and I can't test it. Please send me a pull
 request if you notice something awkward there. :-)
 
+![shell](http://37.17.252.24/devel/vim-cat/vim_cat.png)
+
 ![perl](http://37.17.252.24/devel/neverland-vim-theme/perl_viml.png)
 
 ![viml](http://37.17.252.24/devel/neverland-vim-theme/neverland-viml.png)
