@@ -1,4 +1,4 @@
-Neverland Vim Theme
+Neverland Vim Colorscheme
 ====================
 
 256 colors, CLI and GUI.
@@ -7,8 +7,11 @@ The original GUI conversations was made by Sam Lidder. I'm trying to maintain
 them, but I do not use gVim myself and I can't test it. Please send me a pull
 request if you notice something awkward there. :-)
 
-![neverland](http://devel.japh.se/neverland-vim-theme/perl_viml.png)
-![neverland](http://devel.japh.se/neverland-vim-theme/n900.png)
+![perl](http://37.17.252.24/devel/neverland-vim-theme/perl_viml.png)
+
+![viml](http://37.17.252.24/devel/neverland-vim-theme/neverland-viml.png)
+
+![on mobile](http://37.17.252.24/scrots/n900/n900-vim.png)
 
 Installation and Source
 ============
