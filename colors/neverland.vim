@@ -3,6 +3,18 @@
 " I'm sitting in a car heading Neverland
 " Author: Magnus Woldrich <trapd00r@trapd00r.se>
 
+" set default theme settings unless already set by user
+if !exists("g:neverland_bold")
+    let g:neverland_bold = 1
+endif
+
+if !exists("g:neverland_show_NonText")
+    let g:neverland_show_NonText = 0
+endif
+
+if !exists("g:neverland_show_SpecialKey")
+    let g:neverland_show_SpecialKey = 0
+endif
 
 " Set background first
 set background=dark
@@ -16,6 +28,24 @@ if version > 580
     endif
 endif
 let g:colors_name="neverland"
+
+let s:hi_groups = [ "Boolean", "Character", "ColorColumn", "Comment",
+            \ "Conceal", "Conditional", "Constant", "Cursor", "CursorColumn",
+            \ "CursorIM", "CursorLine", "CursorLineNr", "Debug", "Define",
+            \ "Delimiter", "DiffAdd", "DiffChange", "DiffDelete", "DiffText",
+            \ "Directory", "Error", "ErrorMsg", "Exception", "Float",
+            \ "FoldColumn", "Folded", "Function", "Identifier", "Ignore",
+            \ "Include", "IncSearch", "Keyword", "Label", "LineNr", "Macro",
+            \ "MatchParen", "Menu", "ModeMsg", "MoreMsg", "NonText",
+            \ "Normal", "Number", "Operator", "Pmenu", "PmenuSbar",
+            \ "PmenuSel", "PmenuThumb", "PreCondit", "PreProc", "Question",
+            \ "Repeat", "Scrollbar", "Search", "SignColumn", "Special",
+            \ "SpecialChar", "SpecialComment", "SpecialKey", "SpellBad",
+            \ "SpellCap", "SpellLocal", "SpellRare", "Statement",
+            \ "StatusLine", "StatusLineNC", "StorageClass", "String",
+            \ "Structure", "TabLine", "TabLineFill", "TabLineSel", "Tag",
+            \ "Title", "Todo", "Tooltip", "Type", "Typedef", "Underlined",
+            \ "VertSplit", "Visual", "VisualNOS", "WarningMsg", "WildMenu" ]
 
 " Setting normal before any other highlight group is a good idea
 hi Normal          guifg=#ffd7ff guibg=#121212
@@ -77,7 +107,11 @@ hi SignColumn      guifg=#87ff00 guibg=#262626
 hi SpecialChar     guifg=#d7005f               gui=bold
 hi SpecialComment  guifg=#8a8a8a               gui=bold
 hi Special         guifg=#5fd7ff guibg=#080808
-hi SpecialKey      guifg=#8a8a8a
+if g:neverland_show_SpecialKey == 1
+    hi SpecialKey      guifg=#8a8a8a guibg=#121212
+else
+    hi SpecialKey      guifg=#8a8a8a
+endif
 
 hi SpellBad        guifg=#ff0000 guibg=#121212 gui=bold
 hi SpellCap        guifg=#875f00 guibg=#121212 gui=bold
@@ -108,7 +142,11 @@ hi ColorColumn                   guibg=#262626
 hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#121212
 hi LineNr          guifg=#626262 guibg=#121212
-hi NonText         guifg=#121212 guibg=#121212
+if g:neverland_show_NonText == 1
+    hi NonText         guifg=#626262 guibg=#121212
+else
+    hi NonText         guifg=#121212 guibg=#121212
+endif
 
 hi TabLine         guifg=#878700 guibg=#121212
 hi TabLineFill     guifg=#121212 guibg=#121212
@@ -176,7 +214,11 @@ if &t_Co > 255
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
-   hi SpecialKey      ctermfg=245
+   if g:neverland_show_SpecialKey == 1
+       hi SpecialKey      ctermfg=245 ctermbg=233
+   else
+       hi SpecialKey      ctermfg=245
+   endif
 
    hi SpellBad        ctermfg=196 ctermbg=233 cterm=bold
    hi SpellCap        ctermfg=094 ctermbg=233 cterm=bold
@@ -208,9 +250,23 @@ if &t_Co > 255
    hi CursorLineNr    ctermfg=197 ctermbg=none  cterm=none
    hi CursorColumn                ctermbg=233
    hi LineNr          ctermfg=241 ctermbg=233
-   hi NonText         ctermfg=233 ctermbg=233
+   if g:neverland_show_NonText == 1
+       hi NonText         ctermfg=241 ctermbg=233
+   else
+       hi NonText         ctermfg=233 ctermbg=233
+   endif
 
    hi TabLine         ctermfg=100 ctermbg=233
    hi TabLineFill     ctermfg=233 ctermbg=233
    hi TabLineSel      ctermfg=220 ctermbg=234
 end
+
+if g:neverland_bold == 0
+    for s:group in s:hi_groups
+        if s:group =~ "StatusLine"
+            execute "hi " . s:group . " cterm=inverse gui=inverse"
+        else
+            execute "hi " . s:group . " cterm=none gui=none"
+        endif
+    endfor
+endif
