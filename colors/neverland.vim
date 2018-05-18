@@ -108,7 +108,7 @@ hi ColorColumn                   guibg=#262626
 hi CursorLine                    guibg=#1c1c1c gui=none
 hi CursorColumn                  guibg=#121212
 hi LineNr          guifg=#626262 guibg=#121212
-hi NonText         guifg=#121212 guibg=#121212
+hi NonText         guifg=#626262 guibg=#121212
 
 hi TabLine         guifg=#878700 guibg=#121212
 hi TabLineFill     guifg=#121212 guibg=#121212
@@ -208,7 +208,7 @@ if &t_Co > 255
    hi CursorLineNr    ctermfg=197 ctermbg=none  cterm=none
    hi CursorColumn                ctermbg=233
    hi LineNr          ctermfg=241 ctermbg=233
-   hi NonText         ctermfg=233 ctermbg=233
+   hi NonText         ctermfg=241 ctermbg=233
 
    hi TabLine         ctermfg=100 ctermbg=233
    hi TabLineFill     ctermfg=233 ctermbg=233

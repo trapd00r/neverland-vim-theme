@@ -59,7 +59,7 @@ hi Macro           guifg=#d7ffaf guibg=bg      gui=none
 hi MatchParen      guifg=#ff0000 guibg=#1c1c1c gui=bold
 hi ModeMsg         guifg=#ffaf5f guibg=bg      gui=none
 hi MoreMsg         guifg=#888888 guibg=bg      gui=italic
-hi NonText         guifg=#121212 guibg=#121212 gui=none
+hi NonText         guifg=#808080 guibg=#121212 gui=none
 hi Number          guifg=#0087ff guibg=bg      gui=none
 hi Operator        guifg=#afd700 guibg=bg      gui=none
 hi Pmenu           guifg=#af875f guibg=#000000 gui=none
