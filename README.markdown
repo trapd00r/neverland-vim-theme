@@ -1,19 +1,14 @@
 Neverland Vim Colorscheme
 ====================
 
+![neverland](/extra/neverland.png)
+
 256 colors, CLI and GUI.
 
 The original GUI conversations was made by Sam Lidder. I'm trying to maintain
 them, but I do not use gVim myself and I can't test it. Please send me a pull
 request if you notice something awkward there. :-)
 
-![shell](http://37.17.252.24/devel/vim-cat/vim_cat.png)
-
-![perl](http://37.17.252.24/devel/neverland-vim-theme/perl_viml.png)
-
-![viml](http://37.17.252.24/devel/neverland-vim-theme/neverland-viml.png)
-
-![on mobile](http://37.17.252.24/scrots/n900/n900-vim.png)
 
 Installation and Source
 ============
@@ -29,7 +24,6 @@ $HOME/.vim/colors/) or use pathogen.
 
 License
 =======
-Copyright (C) 2010, 2011 Magnus Woldrich
+Copyright (C) 2010, 2011, 2018 Magnus Woldrich
 
 Do whatever you want with this; If you fork it, please share your improvements.
-
