@@ -49,7 +49,6 @@ hi IncSearch       guifg=#d7ffaf guibg=#000000
 hi Keyword         guifg=#5fafd7               gui=bold
 hi Label           guifg=#ffffaf               gui=none
 hi Macro           guifg=#d7ffaf
-hi SpecialKey      guifg=#5fd7ff
 
 hi MatchParen      guifg=#ff0000 guibg=#1c1c1c gui=bold
 hi ModeMsg         guifg=#ffaf5f
@@ -146,7 +145,6 @@ if &t_Co > 255
    hi Keyword         ctermfg=74                cterm=bold
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
-   hi SpecialKey      ctermfg=81
 
    hi MatchParen      ctermfg=196  ctermbg=234 cterm=bold
    hi ModeMsg         ctermfg=215
