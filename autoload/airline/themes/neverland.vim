@@ -1,7 +1,7 @@
 "NEVERLAND VIM-AIRLINE THEME
 "---------------------------
 "File: neverland.vim
-"Author: cyma <git.cyma@protonmail.ch>
+"Author: cyma <cyma.git@protonmail.ch>
 "Source: <https://github.com/cyma/debian>
 "---------------------------
 "
