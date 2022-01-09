@@ -143,8 +143,8 @@ if &t_Co > 255
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
-   hi FoldColumn      ctermfg=67   ctermbg=233 cterm=none
-   hi Folded          ctermfg=240  ctermbg=235 cterm=bold
+   hi FoldColumn      ctermfg=67   ctermbg=234 cterm=none
+   hi Folded          ctermfg=234  ctermbg=240 cterm=reverse
    hi Function        ctermfg=118
    hi Identifier      ctermfg=149
    hi Ignore          ctermfg=244 ctermbg=232
@@ -172,7 +172,7 @@ if &t_Co > 255
    hi Search          ctermfg=234 ctermbg=222
 
    " marks column
-   hi SignColumn      ctermfg=118 ctermbg=235
+   hi SignColumn      ctermfg=118 ctermbg=233
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
